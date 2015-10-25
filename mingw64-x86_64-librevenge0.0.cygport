@@ -1,0 +1,17 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-librevenge0.0"
+VERSION=0.0.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Document import filter base library for Win64 toolchain"
+DESCRIPTION="librevenge is a base library for writing document import filters.
+It has interfaces for text documents, vector graphics, spreadsheets and
+presentations."
+HOMEPAGE="https://sourceforge.net/p/libwpd/wiki/librevenge/"
+SRC_URI="mirror://sourceforge/libwpd/librevenge-${VERSION}.tar.xz"
+SRC_DIR="librevenge-${VERSION}"
+
+CYGCONF_ARGS="--disable-werror --enable-pretty-printers --without-docs"
+MAKEOPTS+=" nobase_dist_python_DATA=  dist_autoload_DATA= "
