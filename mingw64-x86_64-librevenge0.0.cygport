@@ -3,7 +3,7 @@ inherit cross
 
 NAME="mingw64-x86_64-librevenge0.0"
 VERSION=0.0.4
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Document import filter base library for Win64 toolchain"
 DESCRIPTION="librevenge is a base library for writing document import filters.
